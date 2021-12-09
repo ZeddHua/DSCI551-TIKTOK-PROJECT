@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DSCI 551-Project</title>
+<link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename = 'css/welcome-styles.css') }}">
+</head>
+
+<body class="container">
+<header>
+<img src="{{ url_for('static', filename='images/TikTok-Banner.png') }}">
+    <a class="is-currentmn," href="Welcome.html"></a>
+<h1 align="center">Welcome to TEAM ONE Webpage!</h1>
+<h2 >Evaluation and Managing ML data and models for TikTok Trending Videos Recommendation</h2>
+</h1>
+</header>
+
+
+<nav>
+<ul>
+<li><a href="/description">Description</a></li>
+<li><a href="/explore">Exploration</a></li>
+<li><a href="/visual">Visualization</a></li>
+<li><a href="/extract">Features</a></li>
+<li><a href="/pred">Prediction</a></li>
+ </ul>
+</nav>
+
+<footer>DSCI 551: Database Systems(Fall 2021) <br>Haomin Hu | Zhenmin Hua </footer>
+
+<script src="scripts/menu-highlighter.js"></script>
+</body>
+</html>

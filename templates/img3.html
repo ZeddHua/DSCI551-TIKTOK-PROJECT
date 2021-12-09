@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DSCI 551-Project</title>
+<link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename = 'css/p3-styles.css') }}">
+</head>
+
+<style>
+w1 
+{
+    margin-left: 900px;
+    margin-top: 150px;
+    width: 100%;
+    height: 40%;
+}
+</style>
+
+<body class="container">
+<header>
+<h1 align="center">Welcome to TEAM ONE Webpage!</h1>
+<h2>Evaluation and Managing ML data and models for TikTok Trending Videos Recommendation</h2>
+</header>
+
+	<nav>
+ <ul>
+<li><a href="/">Home</a></li>
+<li><a href="/description">Description</a></li>
+<li><a href="/explore">Exploration</a></li>
+<li><a href="/visual">Visualization</a></li>
+<li><a href="/extract">Features</a></li>
+<li><a href="/pred">Prediction</a></li>
+  <br />
+ </ul>
+</nav>
+<p class="all">
+<w1><img src="{{ url_for('static', filename='images/vis3.png') }}"></w1>
+<p/>
+
+<div id="mySidenav" class="sidenav">
+  <a href="/visual/visual1"><nobr>Visual 1</nobr></a>
+  <a href="/visual/visual2"><nobr>Visual 2</nobr></a>
+  <a href="/visual/visual3"><nobr>Visual 3</nobr></a>
+</div>
+
+    <br>
+
+<footer>DSCI 551: Database Systems(Fall 2021) <br>Haomin Hu | Zhenmin Hua </br></footer>
+</body>
+</html>

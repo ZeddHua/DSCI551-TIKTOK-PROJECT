@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DSCI 551-Project</title>
+<link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename = 'css/features-styles.css') }}">
+</head>
+
+<body class="container">
+<header>
+<h1 align="center">Welcome to TEAM ONE Webpage!</h1>
+<h2>Evaluation and Managing ML data and models for TikTok Trending Videos Recommendation</h2>
+</header>
+
+<style>
+w1 
+{
+    margin-left: 200px;
+    margin-top: 100px;
+    width: 500;
+    height: 300;
+
+}
+</style>
+	<nav>
+ <ul>
+<li><a href="/">Home</a></li>
+<li><a href="/description">Description</a></li>
+<li><a href="/explore">Exploration</a></li>
+<li><a href="/visual">Visualization</a></li>
+<li><a href="/extract">Features</a></li>
+<li><a href="/pred">Prediction</a></li>
+  <br />
+ </ul>
+</nav>
+<p class="all">
+{{content}}
+
+<a href="https://dsci551-tiktok-project-4167a-default-rtdb.firebaseio.com/features_extracted">Check Stored Data</a>
+
+<w1><img src="data:image/png;base64, {{ plot_url }}"></w1>
+
+{% for table in tables %} 
+    {{ table|safe }}
+{% endfor %}
+
+{% for table in tables2 %} 
+    {{ table|safe }}
+{% endfor %}
+
+<p/>
+    <br>
+
+<footer>DSCI 551: Database Systems(Fall 2021) <br>Haomin Hu | Zhenmin Hua </br></footer>
+</body>
+</html>
+

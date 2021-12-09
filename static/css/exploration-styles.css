@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300|Oswald&display=swap');
+
+/************** BASE **************/
+
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: x-large;
+	color: #333333;
+	line-height: 1.5em;
+	background-color: black;
+}
+
+
+h1 {
+	font-family: 'Amatic SC', cursive;
+	letter-spacing: 0.15em;
+	color: #eeeeee;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-family: 'Amatic SC', cursive;
+	letter-spacing: 0.15em;
+	color: #eeeeee;
+	margin-bottom: 0;
+}
+
+h1{ margin-top: 0.5em; }
+h2{ margin-top: 0.5em; }
+
+a {
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+	color: #eeeeee;
+}
+
+
+a:hover { color: gray; }
+
+
+a:active {background-color: black;
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	text-indent: -20px;
+	margin-left: 20px;
+}
+
+/************** LAYOUT **************/
+.container {
+	margin: 25px auto;
+	width: 90%;
+	max-width: 960px;
+
+	display: grid;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+@media ( max-width: 375px ) {
+	.container { display: block; }
+}
+
+main { grid-column: 1 / 4; }
+
+header { 
+ 	grid-column:  1 / 2;
+ 	grid-row: 1 / 3;
+ 	margin: 25px 50px 75px 100px;
+}
+
+nav {
+ 	grid-column: 1 / 5;
+ 	grid-row: 1 / 5;
+}
+
+footer { grid-column: 1 / 2; 
+}
+
+@media ( max-width: 375px ) {
+	footer { margin-bottom: 15px; }
+}
+
+
+/************** HEADER **************/
+header a { 
+	display: block;
+	position: relative; 
+}
+header h1 {
+    margin: 0;
+    font-size: 1.66em;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+
+}
+
+header h2 {
+    margin: 0;
+    font-size: 0.9em;
+    position: absolute;
+    top: 80px;
+    left: 102px;
+
+}
+
+/************** FOOTER **************/
+footer {
+	font-family: 'Oswald', sans-serif;
+	font-size: 80%;
+	color: #999999;
+	line-height: 1.2em
+	float:right;
+	line-break: auto;
+	margin-top: 400px;
+    margin-bottom: 100px;
+    margin-right: -660px;
+    margin-left: 917px;
+
+}
+
+
+
+/************** MAIN **************/
+p {
+	font-family: 'Oswald', sans-serif;
+	font-size: 80%;
+	color: #999999;
+
+	line-break: auto;
+	margin: 0;
+    position: absolute;
+    top: 150px;
+    left: 642px;
+    right: 140PX;
+
+
+}
+
+/************** NAV **************/
+nav ul {
+	text-indent: 0;
+	margin-left: 200px;
+	display: flex; 
+	justify-content: flex-end;
+	grid-column: 2/ 4;
+    grid-row: 4/ 5;
+}
+
+
+nav li { 
+	margin-left: 40px;
+	margin-right:30px;
+	margin-top: 140px;
+	color: #eeeeee;
+
+
+}
+
+@media ( max-width: 395px ) {
+	nav ul { 
+		display: block; 
+	}
+	nav li { margin-left: 0; }
+}
+
+
+.all{
+	margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 0px;
+    margin-left: -540px;
+}
+.Relation{    
+	margin-top: 20px;
+    margin-bottom: 100px;
+    margin-right: -205px;
+    margin-left: 30px;
+}
+
+.taskD {
+	margin-top: 105px;
+    margin-bottom: 100px;
+    margin-right: -206px;
+    margin-left: 584px;
+}
+
+/************** SIDE **************/
+
+/*侧边栏选择器*/
+.sidenav {
+    height: 100%;
+    width: 0; /*原始宽度为0*/
+    position: fixed;
+    z-index: 1;
+    top: 350px;
+    left: 92px;
+    right: 300PX;
+    padding-top: 30px;
+    line-height: 50px;
+}
+
+
+
+/************** TABLE **************/
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align:center;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+/************** STATE **************/
+
+nav ul li a.is-current {
+	background-color: black;
+	color: white;
+}
+
+
+side ul li a.is-current {
+	background-color: black;
+	color: white;
+}
+
+
+/************** df_style **************/
+.mystyle {
+    font-size: 13pt; 
+    font-family: Arial;
+    border-collapse: collapse; 
+    border: 1px solid silver;
+    margin-left: -500px;
+    margin-top: 100px;
+    width: 20%;
+    height: 20%;
+    background: #E6EDF5;
+}
+
+.mystyle td, th {
+    padding: 5px;
+}
+
+.mystyle tr:nth-child(even) {
+    background: #E6EDF5;
+}
+
+.mystyle tr:hover {
+    background: silver;
+    cursor: pointer;
+}
